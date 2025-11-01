@@ -23,7 +23,7 @@ We are working with the **ESP32 CAM (AI-Thinker Module)**.
   python --version
   ```
 ---
-### **1. Creating a Web Server**
+### **0. Creating a Web Server**
 We will be using the sample code from Arduino IDE to perform this. We are primarily doing this to check that our board is functional.
 - Open Arduino IDE
 - Files > Examples > ESP32 > Camera > CameraWebServer
@@ -149,11 +149,11 @@ void loop() {
   delay(500);
 }
 ```
-#### **2. Install Python Libraries**
+#### **1. Install Python Libraries**
 ``` bash
 py -3.12 -m pip install pyserial numpy opencv-python ultralytics
 ```
-#### **3. Create Python Script**
+#### **2. Create Python Script**
 ```python
 import serial
 import numpy as np
