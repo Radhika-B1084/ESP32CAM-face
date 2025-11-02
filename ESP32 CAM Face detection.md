@@ -15,7 +15,7 @@ We are working with the **ESP32 CAM (AI-Thinker Module)**.
 - Tools > Board > Boards Manager
 - Search "esp32" and install "esp32 by Espressif Systems"
 
-**Install Python (3.10+):**
+**Install Python (3.12):**
 - Download from https://www.python.org/downloads/
 - Important: Check "Add Python to PATH" during installation
 - Verify installation in the terminal:
