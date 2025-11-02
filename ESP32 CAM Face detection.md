@@ -265,7 +265,7 @@ ESP32 Dashboard
   ↓ (fetches results)
 Browser
 ```
-So the API server is actually somehitng that we are hosting from our own servers.
+We will be hosting an API on our laptop (an edge device on the network)
 #### Upload this code on the ESP32
 ```C++
 #include "esp_camera.h"
@@ -690,10 +690,10 @@ void loop() {
 ``` C++
 const char* ssid = "YOUR_WIFI_NAME";
 const char* password = "YOUR_PASSWORD";
-const char* apiUrl = "http://API_IP/upload/ROLL_NUMBER";
-const char* statsUrl = "http://API_IP/stats/ROLL_NUMBER";
-const char* frameUrl = "http://API_IP/frame/ROLL_NUMBER";
-const API_URL = "API_IP";
+const char* apiUrl = "http://API_IP:8000/upload/ROLL_NUMBER";
+const char* statsUrl = "http://API_IP:8000/stats/ROLL_NUMBER";
+const char* frameUrl = "http://API_IP:8000/frame/ROLL_NUMBER";
+const API_URL = "API_IP:8000";
 ```
 
 #### **You can finally access the dashboard**
