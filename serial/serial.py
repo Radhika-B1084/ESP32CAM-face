@@ -1,12 +1,16 @@
+
 import serial
 import numpy as np
 import cv2
 from ultralytics import YOLO
 import time
+ser = serial.Serial('COM9', 115200, timeout=2)
+ser.setDTR(False)
+ser.setRTS(True)
+time.sleep(0.1)
+ser.setRTS(False)
+time.sleep(2)
 
-# Initialize serial connection
-ser = serial.Serial('COM5', 115200, timeout=5)
-time.sleep(2)  # Wait for serial connection to establish
 
 # Load YOLO detection model (will auto-download)
 print("Loading YOLO detection model...")
